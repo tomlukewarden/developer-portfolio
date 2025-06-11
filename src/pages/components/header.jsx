@@ -6,9 +6,9 @@ function Header() {
         <div className="row align-items-center py-3">
           <div className="col text-end">
             <nav className="nav">
-              <a href="/" className="nav-link text-dark">Home</a>
-              <a href="/about" className="nav-link text-dark">About</a>
-              <a href="/contact" className="nav-link text-dark">Contact</a>
+              <a href="/" className="nav-link text-light">Home</a>
+              <a href="/about" className="nav-link text-light">About</a>
+              <a href="/contact" className="nav-link text-light">Contact</a>
             </nav>
           </div>
         </div>

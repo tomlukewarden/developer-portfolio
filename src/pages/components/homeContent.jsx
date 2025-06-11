@@ -4,7 +4,6 @@ function HomeContent() {
       <h1>Tom Warden</h1>
       <p className="subtitle">Aspiring software engineer who actually enjoys debugging (most of the time)</p>
       
-      <img src="src/assets/play.png" alt="play button" width={50} />
 
       <p className="tagline">
         I’m currently doing a Master’s in Computer Science and building cool stuff along the way. 
