@@ -1,3 +1,4 @@
+import "../styles/home.css"
 function Header() {
   return (
     <header className="header-gradient shadow">

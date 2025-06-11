@@ -16,6 +16,7 @@ function Bubbles() {
       requestAnimationFrame(move);
     };
 
+
     const onMouseMove = (event) => {
       tgt.current.x = event.clientX;
       tgt.current.y = event.clientY;
@@ -45,7 +46,6 @@ function Bubbles() {
         <div className="g2"></div>
         <div className="g3"></div>
         <div className="g4"></div>
-        <div className="g5"></div>
         <div className="interactive" ref={bubbleRef}></div>
       </div>
     </div>
