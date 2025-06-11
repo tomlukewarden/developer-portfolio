@@ -1,11 +1,8 @@
 function Header() {
   return (
-    <header className="bg-white shadow">
+    <header className="header-gradient shadow">
       <div className="container">
         <div className="row align-items-center py-3">
-          <div className="col-auto">
-            <img className="img-fluid" src="/logo.svg" alt="Logo" width="40" />
-          </div>
           <div className="col text-end">
             <nav className="nav">
               <a href="/" className="nav-link text-dark">Home</a>
