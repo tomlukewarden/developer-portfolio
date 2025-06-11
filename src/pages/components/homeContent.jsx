@@ -9,6 +9,13 @@ function HomeContent() {
         I’m currently doing a Master’s in Computer Science and building cool stuff along the way. 
         I like long walks on the beach, clean code, making things work, and the occasional debugging session that turns into a mini adventure.
       </p>
+
+      <p className="tagline">
+        Feel free to check out my projects! 
+      </p>
+
+      <img src="src/assets/play.png" alt="play button" width={50} className="play-button"/>
+      <img src="src/assets/project-arrow.png" alt="arrow to project button"  width={200} className="project-arrow"/>
     </div>
   );
 }

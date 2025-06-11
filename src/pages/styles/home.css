@@ -60,3 +60,11 @@
     transform: translateY(0);
   }
 }
+
+.project-arrow{
+  position: relative;
+  bottom: 20px;
+  right: 20px;
+  left: 131px;
+
+}
