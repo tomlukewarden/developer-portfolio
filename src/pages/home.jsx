@@ -9,8 +9,8 @@ function Home() {
     <div className="page-wrapper">
       <Header />
       <HomeContent />
-      <Footer />
       <Bubbles/>
+      <Footer />
     </div>
   );
 }

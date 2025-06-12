@@ -1,6 +1,7 @@
 function HomeContent() {
   return (
     <div className="home-content">
+      <img src="src/assets/logo.PNG" className="logo" alt="walking computer" />
       <h1>Tom Warden</h1>
       <p className="subtitle">Aspiring software engineer who actually enjoys debugging (most of the time)</p>
       
@@ -15,7 +16,7 @@ function HomeContent() {
       </p>
 
       <img src="src/assets/play.png" alt="play button" width={50} className="play-button"/>
-      <img src="src/assets/project-arrow.png" alt="arrow to project button"  width={200} className="project-arrow"/>
+    
     </div>
   );
 }

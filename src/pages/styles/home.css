@@ -1,3 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.logo {
+  width: 300px;
+  height: auto;
+  margin: 20px 0 0 0;
+}
+
 .header-gradient, .home-content {
   position: fixed;
   z-index: 10;
@@ -9,6 +20,7 @@
   flex-direction: column;
   position: relative;
   z-index: 1;
+  margin-bottom: 30px;
 }
 
 .home-content {
@@ -29,7 +41,6 @@
 
 .home-content h1 {
   font-size: 3rem;
-  margin: 0;
   letter-spacing: 1px;
 }
 
@@ -83,10 +94,12 @@
   color: #e0e0e0;
   padding: 24px 0 16px 0;
   font-size: 1rem;
-  margin-top: 48px;
   width: 100%;
-  position: relative;  
-  z-index: 11;  
+  position: fixed;
+  left: 0;
+  bottom: 0;       
+  z-index: 20;        
+  margin-top: 0;      
   flex-shrink: 0;
 }
 

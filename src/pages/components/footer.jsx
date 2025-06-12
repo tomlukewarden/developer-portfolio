@@ -10,8 +10,10 @@ function Footer() {
           <a href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
             React
           </a>
+  
           <img src="src/assets/github.png" alt="GitHub" className="footer-icon" />
           <img src="src/assets/gmail-logo.png" alt="Gmail" className="footer-icon" />
+          <img src="src/assets/linkedin.png" alt="LinkedIn" className="footer-icon" />
         </span>
       </div>
     </footer>
