@@ -1,7 +1,15 @@
+import Header from './components/header';
+import Footer from './components/footer';
+import Bubbles from './components/bubbles';
+import AboutContent from './components/aboutContent';
+import "./styles/about.css";
 function About(){
     return (
-        <div className="container mt-5">
-        <h1>About Us</h1>
+        <div className="about-wrapper">
+        <Bubbles/>
+        <Header/>
+        <AboutContent/>
+        <Footer/>
         </div>
     );
 }
