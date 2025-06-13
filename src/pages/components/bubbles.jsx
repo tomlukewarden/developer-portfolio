@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react';
-import '../styles/bubbles.css'; 
+import '../styles/components/bubbles.css'; 
 
 function Bubbles() {
   const bubbleRef = useRef(null);
