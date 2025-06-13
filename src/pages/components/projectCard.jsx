@@ -27,24 +27,54 @@ const projects = [
 
 ];
 
+// Group projects by lang
+const webProjects = projects.filter(p => p.lang === "React" || p.lang === "JavaScript");
+const softwareProjects = projects.filter(p => p.lang !== "React" && p.lang !== "JavaScript");
+
 function ProjectCard() {
   return (
     <>
-    
-      {projects.map((project, idx) => (
-        <div className="project-card mt-8 card" key={idx}>
-          <div className="card-body">
-            <img src={project.image} alt={project.name} className="card-img-left" />
-            <h2 className="card-title">{project.name}</h2>
-            <p className="card-text">{project.description}</p>
-            <p>
-              <a href={project.link}>Deployed Version</a> | 
-              <a href={project.github}> Github Link</a>
-            </p>
-            <a href="" >More info</a>
-          </div>
-        </div>
-      ))}
+      {/* Web Development Projects */}
+      {webProjects.length > 0 && (
+        <>
+          <h2 className="project-section-title">Web Development</h2>
+          {webProjects.map((project, idx) => (
+            <div className="project-card mt-8 card" key={`web-${idx}`}>
+              <div className="card-body">
+                <img src={project.image} alt={project.name} className="card-img-left" />
+                <h2 className="card-title">{project.name}</h2>
+                <p className="card-text">{project.description}</p>
+                <p>
+                  <a href={project.link}>Deployed Version</a> | 
+                  <a href={project.github}> Github Link</a>
+                </p>
+                <a href="">More info</a>
+              </div>
+            </div>
+          ))}
+        </>
+      )}
+
+      {/* Software Development Projects */}
+      {softwareProjects.length > 0 && (
+        <>
+          <h2 className="project-section-title">Software Development</h2>
+          {softwareProjects.map((project, idx) => (
+            <div className="project-card mt-8 card" key={`soft-${idx}`}>
+              <div className="card-body">
+                <img src={project.image} alt={project.name} className="card-img-left" />
+                <h2 className="card-title">{project.name}</h2>
+                <p className="card-text">{project.description}</p>
+                <p>
+                  <a href={project.link}>Deployed Version</a> | 
+                  <a href={project.github}> Github Link</a>
+                </p>
+                <a href="">More info</a>
+              </div>
+            </div>
+          ))}
+        </>
+      )}
     </>
   );
 }
