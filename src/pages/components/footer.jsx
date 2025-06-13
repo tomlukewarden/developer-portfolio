@@ -12,8 +12,8 @@ function Footer() {
             React
           </a>
   
-          <a href="https://github.com/tomlukewarden"><img src="../../../public/assets/github.png" alt="GitHub" className="footer-icon" /></a>
-          <a href="https://www.linkedin.com/in/tom-warden-0b3791286/"><img src="../../../public/assets/linkedin.png" alt="LinkedIn" className="footer-icon" /></a>
+          <a href="https://github.com/tomlukewarden"><img src="/assets/github.png" alt="GitHub" className="footer-icon" /></a>
+          <a href="https://www.linkedin.com/in/tom-warden-0b3791286/"><img src="/assets/linkedin.png" alt="LinkedIn" className="footer-icon" /></a>
         </span>
       </div>
     </footer>

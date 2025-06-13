@@ -1,7 +1,7 @@
 function AboutContent() {
   return (
     <div className="about-content">
-      <img className="me" src="../../../public/assets/me.jpeg" alt="Portrait of Tom Warden" />
+      <img className="me" src="/assets/me.jpeg" alt="Portrait of Tom Warden" />
       <div className="about-text">
         <h1>About Me!</h1>
 
