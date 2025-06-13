@@ -30,6 +30,7 @@ const projects = [
 function ProjectCard() {
   return (
     <>
+    
       {projects.map((project, idx) => (
         <div className="project-card mt-8 card" key={idx}>
           <div className="card-body">

@@ -8,7 +8,6 @@ function Projects () {
     <div className="project-page-wrapper">
         <Bubbles />
         <Header/>
-        <h1 className="project-title">Have a look at my projects!</h1>
         <div className="project-card-wrapper">
         <ProjectCard/>
         </div>

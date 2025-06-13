@@ -8,6 +8,7 @@ function Header() {
         <div className="row align-items-center py-3">
           <div className="col text-end">
             <nav className="nav">
+              <img src='src/assets/logo.PNG' width={80} className="navbar-brand"/>
               <Link to="/" className="nav-link text-light">Home</Link>
               <Link to="/about" className="nav-link text-light">About</Link>
               <Link to="/projects" className="nav-link text-light">Projects</Link>
