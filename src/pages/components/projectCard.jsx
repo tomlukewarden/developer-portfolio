@@ -73,14 +73,22 @@ function ProjectCard() {
           {webProjects.map((project, idx) => (
             <div className="project-card mt-8 card" key={`web-${idx}`}>
               <div className="card-body">
-                <img src={project.image} alt={project.name} className="card-img-left" />
+                {project.image && (
+                  <img src={project.image} alt={project.name} className="card-img-left" />
+                )}
                 <h2 className="card-title">{project.name}</h2>
                 <p className="card-text">{project.description}</p>
                 <p>
-                  <a href={project.link}>Deployed Version</a> | 
-                  <a href={project.github}> Github Link</a>
+                  {project.link && (
+                    <>
+                      <a href={project.link} target="_blank" rel="noopener noreferrer">Deployed Version</a>
+                      {" | "}
+                    </>
+                  )}
+                  {project.github && (
+                    <a href={project.github} target="_blank" rel="noopener noreferrer">Github Link</a>
+                  )}
                 </p>
-                <a href="">More info</a>
               </div>
             </div>
           ))}
@@ -94,14 +102,25 @@ function ProjectCard() {
           {softwareProjects.map((project, idx) => (
             <div className="project-card mt-8 card" key={`soft-${idx}`}>
               <div className="card-body">
-                <img src={project.image} alt={project.name} className="card-img-left" />
+                {/* Only show image if it exists */}
+                {project.image && (
+                  <img src={project.image} alt={project.name} className="card-img-left" />
+                )}
                 <h2 className="card-title">{project.name}</h2>
                 <p className="card-text">{project.description}</p>
                 <p>
-                  <a href={project.link}>Deployed Version</a> | 
-                  <a href={project.github}> Github Link</a>
+                  {/* Only show deployed link if it exists */}
+                  {project.link && (
+                    <>
+                      <a href={project.link} target="_blank" rel="noopener noreferrer">Deployed Version</a>
+                      {" | "}
+                    </>
+                  )}
+                  {/* Only show GitHub link if it exists */}
+                  {project.github && (
+                    <a href={project.github} target="_blank" rel="noopener noreferrer">Github Link</a>
+                  )}
                 </p>
-                <a href="">More info</a>
               </div>
             </div>
           ))}
