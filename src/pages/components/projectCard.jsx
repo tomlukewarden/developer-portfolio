@@ -20,7 +20,7 @@ const projects = [
   {
     name: "Weather App",
     description: "Generic weather app that uses the OpenWeather API to display the weather.",
-    image: "/public/assets/project-images/weather/weather.png",
+    image: "/assets/project-images/weather/weather.png",
     link: "https://tomlukewarden.github.io/weather-app/",
     lang: "JavaScript",
     github: "https://github.com/tomlukewarden/weather-app"},
