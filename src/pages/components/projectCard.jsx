@@ -1,10 +1,11 @@
+import "../../../public/assets"
 import "../styles/components/projectCard.css"
 
 const projects = [
   {
     name: "The Botanist | Msc Project",
     description: "Cosy game where you can grow your own plants and learn about them. This is a project I did for my MSc in Computer Science based on the gamification of medicinal plants associated with the WeeCAIR garden on campus at the Univesity of Dundee and its botanic gardens.",
-    image: "../../../assets/project-images/botanist/botanist_logo.png",
+    image: "../../../public/assets/project-images/botanist/botanist_logo.png",
     link: "",
     lang: "React",
     github: "https://github.com/tomlukewarden/MSc-Project"
@@ -12,7 +13,7 @@ const projects = [
   {
     name: "OUTFTTR",
     description: "Clueless style wardrobe organiser with calender to remind you of your outfits.",
-    image: "../../../assets/project-images/outfttr/outfttr.png",
+    image: "../../../public/assets/project-images/outfttr/outfttr.png",
     link: "",
     lang: "React",
     github: "https://github.com/tomlukewarden/outfitter-app"
@@ -20,7 +21,7 @@ const projects = [
   {
     name: "Weather App",
     description: "Generic weather app that uses the OpenWeather API to display the weather.",
-    image: "../../../assets/project-images/weather/weather.png",
+    image: "../../../public/assets/project-images/weather/weather.png",
     link: "https://tomlukewarden.github.io/weather-app/",
     lang: "JavaScript",
     github: "https://github.com/tomlukewarden/weather-app"},

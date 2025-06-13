@@ -28,7 +28,7 @@ function ContactForm() {
   return (
     <div className="contact-form">
       <h2>Contact Me</h2>
-      <img src="../../../assets/logo.PNG" alt="computer walking" width={70}/>
+      <img src="../../../public/assets/logo.PNG" alt="computer walking" width={70}/>
         <p>If you have any questions or just want to say hello, feel free to reach out!</p>
       <form onSubmit={handleSubmit}>
         <div className="form-group">
