@@ -9,15 +9,9 @@ function Projects () {
         <Bubbles />
         <Header/>
         <h1 className="project-title">Have a look at my projects!</h1>
-        <ProjectCard
-          project={{
-            image:"src/assets/project-images/botanist/botanist_logo.png",
-            name: "The Botanist",
-            description: "Browser game where you grow plants and explore a virtual garden. As well as healing NPCs with fun stories!",
-            link: "https://example.com",
-            github: "https://github.com/your-repo"
-          }}
-        />
+        <div className="project-card-wrapper">
+        <ProjectCard/>
+        </div>
         <Footer />
     </div>
   );
