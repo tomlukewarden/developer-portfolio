@@ -2,7 +2,7 @@
 function HomeContent() {
   return (
     <div className="home-content">
-       <h1>Tom Warden | Web Developer | Software Developer</h1>
+       <h1> Web Developer | Software Developer </h1>
       <img src="/assets/logo.PNG" className="logo" alt="walking computer" />
       <p className="tagline">
         I’m currently doing a Master’s in Computer Science and building cool stuff along the way. 
