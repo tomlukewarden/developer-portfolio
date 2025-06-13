@@ -1,31 +1,39 @@
 .project-card-wrapper {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  gap: 24px;
-  padding: 90px;
-  max-width: 1200px;
-  margin: auto;
+  justify-content: flex-start;     
+  align-items: stretch;          
+  gap: 32px;                       
+  padding: 48px 16px;
+  max-width: 1300px;
+  margin: 60px auto 40px auto;
   position: relative;
   z-index: 1;
-  background-color: transparent; /* Ensure the background is transparent */
+  background-color: transparent;
 }
+
 /* Individual card styling */
 .project-card {
-  z-index: 1;
-background-color: transparent;
+  background: rgba(34, 36, 56, 0.165);
   border-radius: 18px;
-  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.25);
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.18);
   padding: 32px 24px;
-  max-width: 420px;
-  width: 100%;
+  max-width: 360px;
+  min-width: 280px;
+  flex: 1 1 320px;                 
   color: #d4d1d1;
   text-align: center;
-  animation: fadeIn 1s ease-in-out;
+  animation: fadeIn 0.8s ease-in;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.project-card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 16px 40px rgba(31, 38, 135, 0.28);
 }
 
 /* Card links */
@@ -34,15 +42,63 @@ background-color: transparent;
   margin-top: 8px;
   text-decoration: none;
   transition: color 0.2s;
+  word-break: break-all;
 }
 .project-card a:hover {
   color: #38bdf8;
   text-decoration: underline;
 }
 
-.project-card img{
-    width: 180px;
-    height: auto;
-    border-radius: 12px;
-    margin-bottom: 16px;
+.project-card img {
+  width: 160px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 16px;
+  background: #232336;
+}
+
+/* Section titles */
+.project-section-title {
+  width: 100%;
+  font-size: 2rem;
+  color: #d2deee;
+  margin: 40px 0 16px 8px;
+  text-align: left;
+  letter-spacing: 1px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1000px) {
+  .project-card-wrapper {
+    gap: 20px;
+    padding: 32px 4px;
+  }
+  .project-card {
+    max-width: 100%;
+    min-width: 220px;
+    flex: 1 1 220px;
+    padding: 20px 8px;
+  }
+  .project-section-title {
+    font-size: 1.4rem;
+    margin: 32px 0 12px 4px;
+  }
+}
+
+@media (max-width: 600px) {
+  .project-card-wrapper {
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px 2px;
+  }
+  .project-card {
+    max-width: 100%;
+    min-width: 0;
+    padding: 16px 4px;
+  }
+  .project-section-title {
+    font-size: 1.1rem;
+    margin: 24px 0 8px 2px;
+  }
 }

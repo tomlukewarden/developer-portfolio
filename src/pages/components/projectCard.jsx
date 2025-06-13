@@ -5,7 +5,7 @@ const projects = [
     name: "The Botanist | Msc Project",
     description: "Cosy game where you can grow your own plants and learn about them. This is a project I did for my MSc in Computer Science based on the gamification of medicinal plants associated with the WeeCAIR garden on campus at the Univesity of Dundee and its botanic gardens.",
     image: "src/assets/project-images/botanist/botanist_logo.png",
-    link: "#",
+    link: "",
     lang: "React",
     github: "https://github.com/tomlukewarden/MSc-Project"
   },
@@ -13,7 +13,7 @@ const projects = [
     name: "OUTFTTR",
     description: "Clueless style wardrobe organiser with calender to remind you of your outfits.",
     image: "src/assets/project-images/outfttr/outfttr.png",
-    link: "#",
+    link: "",
     lang: "React",
     github: "https://github.com/tomlukewarden/outfitter-app"
   },
@@ -23,13 +23,45 @@ const projects = [
     image: "src/assets/project-images/weather/weather.png",
     link: "https://tomlukewarden.github.io/weather-app/",
     lang: "JavaScript",
-    github: "https://github.com/tomlukewarden/weather-app"}
+    github: "https://github.com/tomlukewarden/weather-app"},
+  {
+    name: "Espresso Express User Interface | UNI",
+    description: "Used for a coffee shop looking to update their website. This was a project for my Database Systems class",
+    image: "",
+    link: "",
+    lang: "PHP",
+    github: "https://github.com/tomlukewarden/Database-Assessment2"}
+    ,{
+      name:"Banking System | UNI"
+    , description: "A banking system that allows users to create accounts, deposit and withdraw money, and view their account balance. This was a project for my Software Development class.",
+      image: "",
+      link: "",
+      lang: "Python",
+      github: "https://github.com/tomlukewarden/AC51002-cw2-Warden-Thomas"
+    },
+    {
+      name: "Conveyer Belt System | UNI",
+      description: "An automated file handler that tracks the performance of the conveyer belt system, allowing for easy reporting. This was a project for my Software Development class.",
+      image:"",
+      link:"",
+      lang: "Python",
+      github: "https://github.com/tomlukewarden/AC51002-cw1-Warden-Thomas"
+    }, 
+    {
+      name: "Fibbonacci Sequence",
+      description: "A simple program that takes a user input and calculates the Fibonacci sequence up to that number.",
+      image:"",
+      link:"",
+      lang:"Python",
+      github: "https://github.com/tomlukewarden/fibonacci-function"
+    }
+
 
 ];
 
 // Group projects by lang
-const webProjects = projects.filter(p => p.lang === "React" || p.lang === "JavaScript");
-const softwareProjects = projects.filter(p => p.lang !== "React" && p.lang !== "JavaScript");
+const webProjects = projects.filter(p => p.lang === "React" || p.lang === "JavaScript" || p.lang === "HTML" || p.lang === "PHP" );
+const softwareProjects = projects.filter(p => p.lang !== "React" && p.lang !== "JavaScript" && p.lang !== "HTML" && p.lang !== "PHP");
 
 function ProjectCard() {
   return (
