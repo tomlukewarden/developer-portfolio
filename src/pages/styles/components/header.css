@@ -6,6 +6,8 @@
   left: 0;
   min-height: 64px;
   padding: 0 32px;
+  background: #232336ad;
+  color: white;
   box-sizing: border-box;
   transition: padding 0.2s;
 }
