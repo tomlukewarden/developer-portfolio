@@ -11,7 +11,6 @@ function Header() {
               <Link to="/" className="nav-link text-light">Home</Link>
               <Link to="/about" className="nav-link text-light">About</Link>
               <Link to="/projects" className="nav-link text-light">Projects</Link>
-              <Link to="/blog" className="nav-link text-light">Blog</Link>
               <Link to="/contact" className="nav-link text-light">Contact</Link>
             </nav>
           </div>
