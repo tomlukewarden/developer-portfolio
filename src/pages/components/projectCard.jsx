@@ -1,4 +1,3 @@
-import "../../../public/assets"
 import "../styles/components/projectCard.css"
 
 const projects = [
