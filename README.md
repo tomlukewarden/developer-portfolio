@@ -70,7 +70,7 @@ index.html               # Entry point
 
 ---
 
-## 📦 Deployment
+## Deployment
 
 - Build with:
   ```sh
