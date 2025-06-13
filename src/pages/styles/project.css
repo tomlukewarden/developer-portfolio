@@ -1,31 +1,21 @@
-/* Container for all cards: responsive grid layout */
+/* Container for all cards */
 .project-page-wrapper {
+   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
   position: relative;
-  z-index: 10;
-  min-height: 100vh;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 32px;
-  align-items: start;
-  justify-items: center;
-  padding-top: 80px;      /* adjust for header */
-  padding-bottom: 80px;   /* adjust for footer */
-  padding-left: 24px;
-  padding-right: 24px;
-  width: 100%;
-  box-sizing: border-box;
-  background: transparent; /* keep background clear for bubbles */
+  z-index: 1;
+  margin-bottom: 30px;
+  padding-top: 80px;
 }
 
 /* Individual card styling */
 .project-card {
-  position: relative;
-  z-index: 15;
+  z-index: 10;
   background: rgba(34, 36, 56, 0.95);
   border-radius: 18px;
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.25);
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.25);
   padding: 32px 24px;
-  margin: 0;
   max-width: 420px;
   width: 100%;
   color: #d4d1d1;
@@ -33,13 +23,14 @@
   animation: fadeIn 1s ease-in-out;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 
-/* Style links inside the card */
+/* Card links */
 .project-card a {
   color: #7dd3fc;
-  margin: 8px 8px 0 8px;
+  margin-top: 8px;
   text-decoration: none;
   transition: color 0.2s;
 }
@@ -48,12 +39,10 @@
   text-decoration: underline;
 }
 
-/* Responsive: stack cards vertically on small screens */
+/* Responsive adjustments */
 @media (max-width: 600px) {
   .project-page-wrapper {
-    grid-template-columns: 1fr;
-    padding-left: 8px;
-    padding-right: 8px;
+    padding: 8px;
     gap: 16px;
   }
   .project-card {

@@ -15,9 +15,6 @@ function HomeContent() {
       <p className="tagline">
         Feel free to check out my projects! 
       </p>
-        <Link to="/projects">
-          <img src="src/assets/play.png" alt="play button" width={50} className="play-button" />
-        </Link>
     
     </div>
   );

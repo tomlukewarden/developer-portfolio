@@ -5,7 +5,7 @@ import ProjectCard from "./components/projectCard";
 function Projects () {
   return (
     <div className="project-page-wrapper">
-         <Bubbles />
+        <Bubbles />
         <Header/>
         <ProjectCard />
         <Footer />
