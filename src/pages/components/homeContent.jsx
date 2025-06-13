@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 ;
 
 function HomeContent() {
@@ -13,7 +15,9 @@ function HomeContent() {
       <p className="tagline">
         Feel free to check out my projects! 
       </p>
-        <img src="src/assets/play.png" alt="play button" width={50} className="play-button" />
+        <Link to="/projects">
+          <img src="src/assets/play.png" alt="play button" width={50} className="play-button" />
+        </Link>
     
     </div>
   );
