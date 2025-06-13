@@ -10,8 +10,14 @@
 }
 
 .header-gradient, .home-content {
-  position: fixed;
   z-index: 10;
+}
+.header-gradient{
+  position: fixed;
+  z-index: 20;
+  width: 100%;
+  top: 0;
+  left: 0;
 }
 
 .page-wrapper {
@@ -21,6 +27,7 @@
   position: relative;
   z-index: 1;
   margin-bottom: 30px;
+  padding-top: 80px; 
 }
 
 .home-content {
@@ -37,6 +44,7 @@
   color: #d4d1d1;
   animation: fadeIn 1s ease-in-out;
   flex: 1 0 auto;
+  position: relative;
 }
 
 .home-content h1 {

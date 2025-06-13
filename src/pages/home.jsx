@@ -7,9 +7,9 @@ import './styles/home.css';
 function Home() {
   return (
     <div className="page-wrapper">
+      <Bubbles/>
       <Header />
       <HomeContent />
-      <Bubbles/>
       <Footer />
     </div>
   );
