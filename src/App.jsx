@@ -4,6 +4,7 @@ import Home from './pages/home';
 import Projects from './pages/projects';
 import About from './pages/about';
 import Contact from './pages/contact';
+import SingleProject from './pages/components/singleProject';
 import './App.css';
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
         <Route path="/projects" element={<Projects />} />
         <Route path="/about" element={<About/>} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/projects/:projectName" element={<SingleProject />} />
       </Routes>
     </Router>
   );

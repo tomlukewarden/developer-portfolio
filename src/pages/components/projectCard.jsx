@@ -1,11 +1,13 @@
 import "../styles/components/projectCard.css"
+import { Link } from "react-router-dom";
 
-const projects = [
+export const projects = [
   {
     name: "The Botanist | Msc Project",
     description: "Cosy game where you can grow your own plants and learn about them. This is a project I did for my MSc in Computer Science based on the gamification of medicinal plants associated with the WeeCAIR garden on campus at the Univesity of Dundee and its botanic gardens.",
     image: "/assets/project-images/botanist/botanist_logo.png",
-    link: "",
+    link: "https://m-sc-project-two.vercel.app",
+    embedUrl: "https://m-sc-project-two.vercel.app",
     lang: "React",
     github: "https://github.com/tomlukewarden/MSc-Project"
   },
@@ -89,6 +91,7 @@ function ProjectCard() {
                     <a href={project.github} target="_blank" rel="noopener noreferrer">Github Link</a>
                   )}
                 </p>
+                <Link to={`/projects/${project.name.replace(/\s+/g, "-").toLowerCase()}`}>View Details</Link>
               </div>
             </div>
           ))}
